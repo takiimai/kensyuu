@@ -1,18 +1,23 @@
-package com.example;
+package chapter4.program1;
 
-public class App {
-    public static void main(String[] args) {
-        System.out.println("【数宛てゲーム】");
-        int ans=new java.util.Random().nextInt(10);
-        for(int i=0;i<5;i++) {
-        	System.out.println("0～9の数字を入力してください");
-        	int num=new java.util.Scanner(System.in).nextInt();
-        	if(ans==num) {
-        		System.out.println("あたり");
-        		break;
-        	}else {
-        		System.out.println("ちがいます");
-        	}
-        }
-        System.out.println("終了");
-    }}
+import java.util.ArrayList;
+
+public class DE {
+	ArrayList<Eemploye> EemployeList = new ArrayList<>();
+	String name;
+	ArrayList<String> BusyoList = new ArrayList<>();
+
+	public Eemploye newEemploye(String name, String busyo) {
+		Eemploye x = new Eemploye(name, busyo);
+		EemployeList.add(new Eemploye(name, busyo));
+		return x;
+	}
+
+	public void displayEemployeList() {
+
+		for (Eemploye y : EemployeList) {
+			System.out.println(y);
+		}
+
+	}
+}
