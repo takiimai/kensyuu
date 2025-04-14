@@ -10,20 +10,18 @@ public class Circle extends Shape {
 	int radius;
 
 	//引数なしコンストラクタ
-	public void Circle() {
-		center.x = 0;
-		center.y = 0;
-		radius = 0;
+	public  Circle() {
+		this.center= new Point(0,0);
+		this.radius=0;
 	}
 
 	/**
 	 * 引数x、yで受け取ったデータを用いて、１つのPointオブジェクトを生成し、centerフィールドに代入する
 	 *　引数rもradiusフィールドに代入する。
 	 */
-	public void Circle(int x, int y, int r) {
-		Point i = new Point(x, y);
-		center = i;
-		radius = r;
+	public  Circle(int x, int y, int r) {
+		this.center=new Point(x,y);
+		this.radius=r;
 	}
 
 	//メッセージの出力

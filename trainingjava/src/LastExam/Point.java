@@ -9,8 +9,8 @@ public class Point {
 
 	//引数なしコンストラクタ
 	public Point() {
-		x = 0;
-		y = 0;
+		this.x = 0;
+		this.y = 0;
 	}
 
 	/**

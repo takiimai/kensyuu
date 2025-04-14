@@ -4,9 +4,11 @@ package LastExam;
  * ・正方形描画メソッド
  */
 public class Square extends Rectangle  {
+	
+	
 	//コンストラクタ
-	public void Spuare(int x,int y,int width) {
-		Rectangle(x,y,width,width);
+	public Square(int x,int y,int width) {
+		super(x,y,width,width);
 	}
 	
 	//メッセージの出力

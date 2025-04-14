@@ -11,10 +11,8 @@ public class Line implements Figure {
 
 	//引数無しコンストラクタ
 	public Line() {
-		this.p1.x = 0;
-		this.p1.y = 0;
-		this.p2.x = 0;
-		this.p2.y = 0;
+		this.p1 = new Point(0, 0);
+		this.p2 = new Point(0, 0);
 	}
 
 	/**
@@ -23,15 +21,19 @@ public class Line implements Figure {
 	 */
 
 	public Line(int x1, int y1, int x2, int y2) {
-		p1.x = x1;
-		p1.y = y1;
-		p2.x = x2;
-		p2.y = y2;
+		this.p1 = new Point(x1, y1);
+		this.p2 = new Point(x2, y2);
+
+		/**p1.x = x1;
+		*p1.y = y1;
+		*p2.x = x2;
+		*p2.y = y2;
+		*/
 	}
 
 	//メッセージの出力
 	public void draw() {
-		System.out.println("始点(" + p1 + ")から終点(" + p2 + ")まで");
+		System.out.println("始点(" + p1.x + "," + p1.y + ")から終点(" + p2.x + "," + p2.y + ")まで");
 	}
 
 	/**

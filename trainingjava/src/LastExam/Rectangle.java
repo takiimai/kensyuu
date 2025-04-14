@@ -11,7 +11,7 @@ public class Rectangle extends Polygon {
 	int height;
 
 	//コンストラクタ
-	public void Rectangle(int x, int y, int width, int height) {
+	public Rectangle(int x, int y, int width, int height) {
 		Point p1 = new Point(x, y);
 		p = p1;
 		this.width = width;

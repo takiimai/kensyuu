@@ -15,13 +15,13 @@ public class Triangle extends Polygon {
 	 * p1フィールドとp2フィールド 、p3フィールドにそれぞれ代入する
 	 * スーパークラス内で定義されているangleフィールドに３を代入する。
 	 */
-	public void Triangle(int p1x, int p1y, int p2x, int p2y, int p3x, int p3y) {
+	public Triangle(int p1x, int p1y, int p2x, int p2y, int p3x, int p3y) {
 		Point P1 = new Point(p1x, p1y);
 		Point P2 = new Point(p2x, p2y);
 		Point P3 = new Point(p3x, p3y);
-		p1 = P1;
-		p2 = P2;
-		p3 = P3;
+		this.p1 = P1;
+		this.p2 = P2;
+		this.p3 = P3;
 		angle = 3;
 
 	}
