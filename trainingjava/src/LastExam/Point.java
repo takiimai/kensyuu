@@ -44,4 +44,9 @@ public class Point {
 		this.y = y;
 	}
 
+	@Override
+	public String toString() {
+		return x + "," + y;
+	}
+
 }
