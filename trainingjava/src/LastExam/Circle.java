@@ -6,8 +6,8 @@ package LastExam;
  * ・円周の長さを取得するメソッド
  */
 public class Circle extends Shape {
-	Point center;
-	int radius;
+	private Point center;
+	private int radius;
 
 	//引数なしコンストラクタ
 	public Circle() {

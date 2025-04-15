@@ -6,9 +6,9 @@ package LastExam;
  * ・三角形の周囲の長さを取得するメソッド
  */
 public class Triangle extends Polygon {
-	Point p1;
-	Point p2;
-	Point p3;
+	private Point p1;
+	private Point p2;
+	private Point p3;
 
 	/**
 	 * 引数で受け取ったデータを用いて、3つのPoint オブジェクトを生成

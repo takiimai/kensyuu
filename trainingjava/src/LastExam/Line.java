@@ -6,8 +6,8 @@ package LastExam;
  * ・線の長さを取得するメソッド
  */
 public class Line implements Figure {
-	Point p1;
-	Point p2;
+	private Point p1;
+	private Point p2;
 
 	//引数無しコンストラクタ
 	public Line() {

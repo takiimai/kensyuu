@@ -7,8 +7,8 @@ package LastExam;
  */
 public class Rectangle extends Polygon {
 	Point p;
-	int width;
-	int height;
+	private int width;
+	private int height;
 
 	//コンストラクタ
 	public Rectangle(int x, int y, int width, int height) {
