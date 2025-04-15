@@ -6,7 +6,7 @@ package LastExam;
  * ・長方形の周囲の長さを取得するメソッド
  */
 public class Rectangle extends Polygon {
-	Point p;
+	private Point p;
 	private int width;
 	private int height;
 

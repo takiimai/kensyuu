@@ -33,7 +33,7 @@ public class Line implements Figure {
 
 	//メッセージの出力
 	public void draw() {
-		System.out.println("始点(" + p1.x + "," + p1.y + ")から終点(" + p2.x + "," + p2.y + ")まで");
+		System.out.println("始点(" + p1.getX() + "," + p1.getY() + ")から終点(" + p2.getX() + "," + p2.getY() + ")まで");
 	}
 
 	/**
@@ -46,8 +46,9 @@ public class Line implements Figure {
 		double i;
 		double f;
 		double ans;
-		i = Math.pow((p2.x - p1.x), 2);
-		f = Math.pow((p2.y - p1.y), 2);
+
+		i = Math.pow((p2.getX() - p1.getX()), 2);
+		f = Math.pow((p2.getY() - p1.getY()), 2);
 		ans = Math.sqrt(i + f);
 		return ans;
 	}

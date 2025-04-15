@@ -4,8 +4,8 @@ package LastExam;
  * 座標位置情報を表すクラス
  */
 public class Point {
-	int x;
-	int y;
+	private int x;
+	private int y;
 
 	//引数なしコンストラクタ
 	public Point() {

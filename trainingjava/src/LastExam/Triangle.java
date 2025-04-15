@@ -45,16 +45,16 @@ public class Triangle extends Polygon {
 		double f;
 		double a3;
 		double ans;
-		a = Math.pow((p2.x - p1.x), 2);
-		b = Math.pow((p2.y - p1.y), 2);
+		a = Math.pow((p2.getX() - p1.getX()), 2);
+		b = Math.pow((p2.getY() - p1.getY()), 2);
 		a1 = Math.sqrt(a + b);
 
-		c = Math.pow((p3.x - p2.x), 2);
-		d = Math.pow((p3.y - p2.y), 2);
+		c = Math.pow((p3.getX() - p2.getX()), 2);
+		d = Math.pow((p3.getY() - p2.getY()), 2);
 		a2 = Math.sqrt(c + d);
 
-		e = Math.pow((p1.x - p3.x), 2);
-		f = Math.pow((p1.y - p3.y), 2);
+		e = Math.pow((p1.getX() - p3.getX()), 2);
+		f = Math.pow((p1.getY() - p3.getY()), 2);
 		a3 = Math.sqrt(e + f);
 
 		ans = a1 + a2 + a3;
