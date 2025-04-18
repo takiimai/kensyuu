@@ -33,5 +33,9 @@ public class Rectangle extends Polygon {
 		ans = (width + height) * 2;
 		return ans;
 	}
+	
+	public Point getPoint() {
+		return p;
+	}
 
 }
